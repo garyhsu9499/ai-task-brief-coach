@@ -6,9 +6,9 @@
 「交辦小教練」是一個繁體中文單頁互動網站，協助使用者把模糊的工作想法整理成清楚的 AI 任務單。網站以課堂提到的 Agentic AI、Harness，以及「交代成品、邊界和驗收方式」為概念，提供情境範例、任務欄位、即時 Markdown 預覽、複製與下載功能。網頁不呼叫 AI，也不會上傳表單內容。
 
 ## 專案連結
-- GitHub Repository：發布後填入 repository 網址
-- 網頁成果：GitHub Pages 部署完成後填入網址
-- 專案員工手冊：根目錄 AGENTS.md
+- GitHub Repository：https://github.com/garyhsu9499/ai-task-brief-coach
+- 網頁成果：https://garyhsu9499.github.io/ai-task-brief-coach/
+- 專案員工手冊：[AGENTS.md](https://github.com/garyhsu9499/ai-task-brief-coach/blob/main/AGENTS.md)
 
 ## 如何延續開發
 每次開始新工作先閱讀 AGENTS.md，確認專案用途、繁體中文與視覺方向、頁面結構、檔案命名及 AI 修改規則，再修改相關程式。新增情境時更新 app.js 的 templates；新增欄位時同步更新 HTML、fields 清單、範例資料和任務單產生器。修改後依員工手冊逐項檢查互動、窄螢幕排版和鍵盤可用性，再依 README 發布到 GitHub Pages。
