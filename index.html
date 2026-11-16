@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2eb">
+  <meta name="description" content="把模糊想法整理成 AI 看得懂、做得到、也驗收得了的任務單。">
+  <title>交辦小教練｜把想法變成清楚的 AI 任務單</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workbench">跳到任務編輯器</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="交辦小教練首頁"><span class="brand-mark" aria-hidden="true">交</span><span>交辦小教練<span class="brand-dot">.</span></span></a>
+    <nav aria-label="主要導覽"><a href="#method">交辦原則</a><a href="#workbench">開始撰寫</a><a class="nav-cta" href="#workbench">製作任務單 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="top">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span>給 AI 的工作說明書</p>
+        <h1 id="hero-title">別只說「幫我做」。<br><span>把工作交代清楚。</span></h1>
+        <p class="hero-intro">用幾個問題說明成品、做事邊界和驗收方式，<br class="desktop-break">讓 AI 從「回答你」更進一步，開始「替你完成」。</p>
+        <a class="button button-dark" href="#workbench">開始整理任務 <span aria-hidden="true">↓</span></a>
+        <p class="hero-note"><span class="status-pip"></span>不必寫得很完美，先把想法放進來。</p>
+      </div>
+      <div class="hero-visual" aria-label="任務單範例：成果、限制、驗收">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-stamp" aria-hidden="true">CLEAR<br>BRIEF</div>
+        <article class="mini-brief">
+          <div class="mini-topline"><span>任務單　/　001</span><span class="mini-status">READY</span></div>
+          <p class="mini-kicker">先定義成果</p><h2>做完以後，<br>我會拿到什麼？</h2>
+          <div class="mini-rule"></div>
+          <div class="mini-row"><span>01</span><span>交付格式</span><b>Markdown</b></div>
+          <div class="mini-row"><span>02</span><span>工作範圍</span><b>明確</b></div>
+          <div class="mini-row"><span>03</span><span>驗收方式</span><b>可檢查</b></div>
+        </article>
+        <span class="visual-caption">一份好任務單，從好問題開始。</span>
+      </div>
+      <div class="hero-index" aria-hidden="true"><span>01</span><span class="index-line"></span><span>03</span></div>
+    </section>
+    <section class="method-section" id="method" aria-labelledby="method-title">
+      <div class="shell method-inner">
+        <div class="section-heading"><p class="eyebrow"><span class="eyebrow-line"></span>先想清楚三件事</p><h2 id="method-title">好的交辦，<br><span>不讓 AI 猜。</span></h2></div>
+        <div class="principles">
+          <article class="principle-card"><span class="principle-number">01</span><div class="principle-icon icon-output" aria-hidden="true"></div><h3>要什麼成品？</h3><p>說清楚完成後會收到什麼、放在哪裡、使用什麼格式。</p></article>
+          <article class="principle-card"><span class="principle-number">02</span><div class="principle-icon icon-boundary" aria-hidden="true"></div><h3>有哪些邊界？</h3><p>交代工作範圍、不能做的事，以及資料不足時要怎麼處理。</p></article>
+          <article class="principle-card"><span class="principle-number">03</span><div class="principle-icon icon-check" aria-hidden="true"></div><h3>怎樣算完成？</h3><p>把驗收條件寫成看得見、逐項核對的檢查點。</p></article>
+        </div>
+      </div>
+      <div class="formula-band shell"><span>課堂概念</span><p><b>AI Agent</b> ＝ AI Model ＋ Harness</p><span class="formula-caption">把目標、工具與做事方法交代好，AI 才能接手工作流程。</span></div>
+    </section>
+    <section class="workbench-section shell" id="workbench" aria-labelledby="workbench-title">
+      <div class="workbench-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span>你的任務工作台</p><h2 id="workbench-title">把想法，整理成<br><span>可以交出去的工作。</span></h2></div>
+        <p class="workbench-desc">挑一個情境當起點，或直接填寫。右側會即時整理成一份可複製、可下載的 Markdown 任務單。</p>
+      </div>
+      <div class="template-strip" aria-label="快速套用情境範例"><span class="template-label">選個起點</span>
+        <button class="template-chip" type="button" data-template="folder">整理資料夾 <span aria-hidden="true">↗</span></button>
+        <button class="template-chip" type="button" data-template="research">整理研究資料 <span aria-hidden="true">↗</span></button>
+        <button class="template-chip" type="button" data-template="website">製作活動網頁 <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="workspace-grid">
+        <form class="brief-form" id="brief-form">
+          <div class="form-topline"><span>填寫工作說明</span><span><i class="required-dot"></i> 至少填寫任務目標</span></div>
+          <div class="field-group"><label for="goal"><span class="field-number">01</span> 任務目標 <span class="required-text">必填</span></label><textarea id="goal" name="goal" rows="2" placeholder="例如：整理這學期的課程研究資料，方便期末報告引用。" required></textarea><p class="field-hint">用一句話說明「希望 AI 幫你完成什麼」。</p></div>
+          <div class="field-group"><label for="deliverable"><span class="field-number">02</span> 交付成果</label><textarea id="deliverable" name="deliverable" rows="2" placeholder="例如：一份依主題分類的 Markdown 索引，附上各文件摘要與路徑。"></textarea></div>
+          <div class="field-group field-pair">
+            <div><label for="sources"><span class="field-number">03</span> 輸入資料</label><textarea id="sources" name="sources" rows="2" placeholder="例如：資料夾 ./research/ 裡的 PDF 與筆記。"></textarea></div>
+            <div><label for="format"><span class="field-number">04</span> 格式與位置</label><textarea id="format" name="format" rows="2" placeholder="例如：輸出到 ./research/index.md，以繁體中文撰寫。"></textarea></div>
+          </div>
+          <div class="field-group"><label for="steps"><span class="field-number">05</span> 執行方式</label><textarea id="steps" name="steps" rows="3" placeholder="列出希望 AI 依序完成的步驟；需要先提計畫時，也寫在這裡。"></textarea></div>
+          <div class="field-group"><label for="constraints"><span class="field-number">06</span> 限制與邊界</label><textarea id="constraints" name="constraints" rows="2" placeholder="例如：不要刪除或改寫來源檔。資料無法判讀時，請標記待確認。"></textarea></div>
+          <div class="field-group"><label for="acceptance"><span class="field-number">07</span> 驗收條件</label><textarea id="acceptance" name="acceptance" rows="2" placeholder="例如：每份來源都出現在索引中；分類有說明；所有連結都可開啟。"></textarea><p class="field-hint">完成後你會逐項確認哪些事情？</p></div>
+          <div class="form-actions"><button class="button button-dark" type="submit">整理成任務單 <span aria-hidden="true">→</span></button><button class="reset-button" type="reset">清空重寫 <span aria-hidden="true">↺</span></button></div>
+        </form>
+        <aside class="output-panel" aria-labelledby="output-title">
+          <div class="output-head"><div><span class="output-kicker">LIVE PREVIEW</span><h3 id="output-title">你的任務單</h3></div><span class="output-state" id="output-state"><i></i><span id="output-state-text">等待輸入</span></span></div>
+          <p class="output-intro">這份內容可以貼給 AI，作為執行工作的起點。</p>
+          <pre class="output-content" id="output-content" tabindex="0" aria-label="產生的 Markdown 任務單"># 任務單
+
+填寫左側欄位，這裡會整理出清楚的工作說明。
+
+---
+先說明想完成的目標，再補上成品、限制和驗收方式。</pre>
+          <div class="output-actions"><button class="button button-accent" type="button" id="copy-button" disabled>複製任務單 <span aria-hidden="true">▣</span></button><button class="download-button" type="button" id="download-button" disabled>下載 .md</button></div>
+          <p class="privacy-note"><span aria-hidden="true">◉</span> 內容只在你的瀏覽器中處理，不會上傳。</p><p class="sr-only" id="live-status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </section>
+    <section class="closing-section"><div class="shell closing-inner"><p class="closing-mark" aria-hidden="true">交</p><div><p class="eyebrow">從交辦開始，持續調整</p><h2>先讓 AI 少猜一點，<br>再一起把流程做好。</h2></div><a href="#workbench" class="closing-link">回到任務工作台 <span aria-hidden="true">↑</span></a></div></section>
+  </main>
+  <footer class="site-footer shell"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">交</span><span>交辦小教練<span class="brand-dot">.</span></span></a><p>依第九週課程「Agentic Work 與 AI 工作現場」相關概念整理。</p><a href="#top">回到頁首 ↑</a></footer>
+</body>
+</html>
